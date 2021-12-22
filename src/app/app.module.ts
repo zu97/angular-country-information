@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { ManageCountriesComponent } from './manage-countries/manage-countries.component';
 import { CountryNotSelectedComponent } from './manage-countries/country-not-selected.component';
+import { CountryDetailsComponent } from './manage-countries/country-details/country-details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CountryNotSelectedComponent } from './manage-countries/country-not-sele
     LoaderComponent,
     PageNotFoundComponent,
     ManageCountriesComponent,
-    CountryNotSelectedComponent
+    CountryNotSelectedComponent,
+    CountryDetailsComponent
   ],
   imports: [
     BrowserModule,
