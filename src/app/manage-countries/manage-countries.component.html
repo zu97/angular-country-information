@@ -1,0 +1,18 @@
+<div class="container py-3">
+  <div class="row">
+    <div class="col-4">
+      <app-loader [isLoading]="isLoading">
+        <div class="list-group my-3">
+          <a class="list-group-item list-group-item-action"
+             *ngFor="let country of countries"
+             [routerLink]="['country/', country.alpha3Code]"
+             routerLinkActive="active"
+          >{{ country.name }}</a>
+        </div>
+      </app-loader>
+    </div>
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
